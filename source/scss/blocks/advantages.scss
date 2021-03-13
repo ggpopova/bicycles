@@ -1,8 +1,12 @@
 .advantages {
-  margin-bottom: 300px; 
+  margin-bottom: 149px;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 130px;
+    margin-bottom: 71px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 51px;
   }
 }
 
