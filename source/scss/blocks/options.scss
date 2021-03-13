@@ -1,6 +1,14 @@
 .options {
   margin: 0 auto;
   background-color: $background-grey;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 69px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 52px;
+  }
 }
 
 .options h2 {
@@ -28,22 +36,20 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  margin: 0 0 125px;
-  padding: 0 157px 150px;
+  margin-bottom: 0;
+  padding: 0 157px 149px;
 
   @media (max-width: $tablet-width) {
     align-items: baseline;
     justify-content: center;
     gap: 50px;
-    margin-bottom: 78px;
-    padding: 0 89px 70px;
+    padding: 0 89px;
   }
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
     gap: 43px;
-    margin-bottom: 91px;
-    padding: 0 25px 52px;
+    padding: 0 25px;
   }
 }
 
