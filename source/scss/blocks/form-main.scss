@@ -1,0 +1,62 @@
+.form-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.form-main p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: $basic-white;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 18px;
+    color: $basic-black;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.form-main button,
+.form-main input {
+  width: 327px;
+  height: 48px;
+  padding: 5px 30px;
+  background: $basic-white;
+  border: 1px solid $grey-lightest;
+  border-radius: 4px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
+    border: 1px solid $grey-lightest;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 288px;
+  }
+}
+
+.form-main input[type="search"] {
+  color: $grey-darker;
+  opacity: 0.5;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.form-main button {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  background: $green;
+  border-radius: 6px;
+}

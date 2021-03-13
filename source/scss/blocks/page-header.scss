@@ -1,0 +1,20 @@
+.page-header {
+  width: 100%;
+  // max-height: 825px;
+  background-repeat: no-repeat;
+  background-image: url("../img/photo-1-desktop@1x.jpg");
+  background-color: $grey-darker;
+
+  @media (max-width: $tablet-width) {
+    max-height: 340px;
+    margin-bottom: 400px;
+    background-image: url("../img/photo-1-tablet@1x.jpg");
+  }
+
+  @media (max-width: $mobile-width) {
+    max-height: 390px;
+    background-image: url("../img/photo-1-mobile@1x.jpg");
+  }
+}
+
+
