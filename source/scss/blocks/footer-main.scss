@@ -1,0 +1,146 @@
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.footer-main__address {
+  margin-bottom: 41px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 18px;
+  }
+}
+
+.footer-main__address h2 {
+  margin: 0 11px 29px 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  color: $grey-light;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+    margin-bottom: 18px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.footer-main__address p {
+  margin: 0;
+  padding: 0 440px 0 425px;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 31px;
+  color: $grey-darkest;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 69px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 288px;
+    margin: 0 auto;
+    padding: 0 15px 0 17px;
+  }
+}
+
+.footer-main__map {
+  margin: 0 auto;
+  margin-bottom: 36px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 29px;
+  }
+}
+
+.footer-main__thumbnail {
+  @media (max-width: $tablet-width) {
+    width: 698px;
+    height: 545px;
+    object-fit: cover;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 320px;
+    height: 250px;
+  }
+}
+
+.footer-main__contacts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 558px;
+  margin: 0 auto;
+  margin-bottom: 97px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    gap: 22px;
+align-items: center;
+    margin-bottom: 50px;
+  }
+}
+
+.footer-main__email,
+.footer-main__phone {
+  
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $grey-dark;
+}
+
+.footer-main__email {
+  position: relative;
+  margin-right: 90px;
+
+  &::before {
+    content: "";
+    width: 26px;
+    height: 20px;
+    padding-left: 40px;
+    background-image: url("../img/icon-5.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-right: 0;
+  }
+}
+
+.footer-main__phone {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 22px;
+    height: 23px;
+    padding-left: 40px;
+    background-image: url("../img/icon-6.svg");
+    background-repeat: no-repeat;
+  }
+}
