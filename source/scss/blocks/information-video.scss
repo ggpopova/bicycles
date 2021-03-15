@@ -2,19 +2,46 @@
   position: relative;
   margin-bottom: 248px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 72.5%;
+    left: 48.6%;
+    z-index: 1;
+    width: 65px;
+    height: 65px;
+    background-image: url("../img/icon-4.svg");
+    background-repeat: no-repeat;
+  }
+
   @media (max-width: $tablet-width) {
     margin-bottom: 156px;
+
+    &::before {
+      top: 75.6%;
+      left: 43.7%;
+      width: 90px;
+      height: 90px;
+      background-image: url("../img/icon-9.svg");
+    }
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 122px;
+    margin-bottom: 121px;
+
+    &::before {
+      top: 82.5%;
+      left: 39.6%;
+      width: 65px;
+      height: 65px;
+      background-image: url("../img/icon-4.svg");
+    }
   }
 }
 
 .information-video__wrapper {
-  
-  height: 706px;
-  background-color: $background-grey-dark;
+  height: 707px;
+  background-color: $background-gray-dark;
 
   @media (max-width: $tablet-width) {
     height: 413px;
@@ -26,16 +53,14 @@
 }
 
 .information-video__wrapper h2 {
-  margin: 0;
-  margin-left: -12px;
-  margin-bottom: 19px;
+  margin: 0 0 19px -12px;
   padding-top: 120px;
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
   letter-spacing: -0.005em;
-  color: $basic-white;
   text-align: center;
+  color: $basic-white;
 
   @media (max-width: $tablet-width) {
     padding-top: 70px;
@@ -54,8 +79,8 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 28px;
-  text-align: center;
   letter-spacing: -0.005em;
+  text-align: center;
   color: $basic-white;
   opacity: 0.7;
 
@@ -70,31 +95,21 @@
 
 .information-video__thumbnail {
   position: absolute;
-  top: 40%;
-  left: 18%;
-  background-color: $grey-darkest;
-
-  &::before {
-    content: "";
-    top: 50%;
-    left: 50%;
-    width: 65px;
-    height: 65px;
-    background-image: url("../img/icon-4.svg");
-    background-repeat: no-repeat;
-    z-index: 2;
-  }
+  top: 54%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: $gray-darkest;
 
   @media (max-width: $tablet-width) {
-    top: 52%;
-    left: 17%;
+    top: 73%;
     width: 503px;
     height: 282px;
   }
 
   @media (max-width: $mobile-width) {
-    top: 71%;
-    left: 5%;
+    top: 83%;
     width: 288px;
     height: 162px;
   }

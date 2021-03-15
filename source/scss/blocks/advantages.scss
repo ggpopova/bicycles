@@ -1,12 +1,15 @@
 .advantages {
   margin-bottom: 149px;
+  padding-top: 150px;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 71px;
+    margin-bottom: 66px;
+    padding-top: 413px;
   }
 
   @media (max-width: $mobile-width) {
     margin-bottom: 51px;
+    padding-top: 431px;
   }
 }
 
@@ -17,8 +20,8 @@
   font-size: 30px;
   line-height: 30px;
   letter-spacing: -0.005em;
-  color: $grey-light;
   text-align: center;
+  color: $gray-light;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 31px;
@@ -32,11 +35,13 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 38px;
   counter-reset: advantages-list;
+  margin: 0;
   padding: 0 137px;
   list-style: none;
 
   @media (max-width: $tablet-width) {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 42px;
     padding: 0 106px;
   }
 
@@ -54,8 +59,8 @@
   font-weight: normal;
   font-size: 22px;
   line-height: 34px;
-  text-align: center;
   letter-spacing: -0.5px;
+  text-align: center;
 
   &::before {
     counter-increment: advantages-list;
@@ -64,10 +69,10 @@
     font-weight: bold;
     font-size: 28px;
     line-height: 38px;
-    text-align: center;
     letter-spacing: -1.27273px;
+    text-align: center;
   }
-   
+
   @media (max-width: $mobile-width) {
     font-size: 18px;
   }

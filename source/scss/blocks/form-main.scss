@@ -3,6 +3,11 @@
   flex-direction: column;
   justify-content: flex-end;
   gap: 20px;
+  width: 327px;
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+  }
 }
 
 .form-main p {
@@ -10,8 +15,8 @@
   font-weight: 600;
   font-size: 17px;
   line-height: 28px;
-  text-align: center;
   letter-spacing: -0.005em;
+  text-align: center;
   color: $basic-white;
 
   @media (max-width: $tablet-width) {
@@ -35,12 +40,12 @@
   height: 48px;
   padding: 5px 30px;
   background: $basic-white;
-  border: 1px solid $grey-lightest;
+  border: 1px solid $gray-lightest;
   border-radius: 4px;
 
   @media (max-width: $tablet-width) {
     margin: 0 auto;
-    border: 1px solid $grey-lightest;
+    border: 1px solid $gray-lightest;
   }
 
   @media (max-width: $mobile-width) {
@@ -49,10 +54,10 @@
 }
 
 .form-main input[type="search"] {
-  color: $grey-darker;
-  opacity: 0.5;
   font-size: 15px;
   line-height: 24px;
+  color: $gray-darker;
+  opacity: 0.5;
 }
 
 .form-main button {

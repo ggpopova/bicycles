@@ -3,22 +3,20 @@ $desktop-width: 1440px;
 $tablet-width: 768px;
 $mobile-width: 320px;
 
-
-
 // COLORS
-$basic-white: #FFFFFF;
-$basic-black: #000000;
-$green: #0AD9C6;
-$grey-lightest:#C9CCD4;
-$grey-lighter: rgba(255, 255, 255, 0.2);
-$grey-light: #1F1F1F;
-$grey:  rgba(20, 21, 23, 0.2);
-$grey-darker: #1C1C1C;
-$grey-darkest: rgba(0, 0, 0, 0.7);
-$grey-dark: rgba(0, 0, 0, 0.5);
-$menu-grey: #48494D;
-$menu-background-grey: #F6F6F6;
+$basic-white: rgb(255, 255, 255);
+$basic-black: rgb(0, 0, 0);
+$green: rgb(10, 217, 198);
+$gray-lightest:rgb(201, 204, 212);
+$gray-lighter: rgba(255, 255, 255, 0.2);
+$gray-light: rgb(31, 31, 31);
+$gray:  rgba(20, 21, 23, 0.2);
+$gray-darker: rgb(28, 28, 28);
+$gray-darkest: rgba(0, 0, 0, 0.7);
+$gray-dark: rgba(0, 0, 0, 0.5);
+$menu-gray: rgb(72, 73, 77);
+$menu-background-gray: rgb(246, 246, 246);
 
-$background-grey: #F6F7F9;
-$background-grey-dark:#131314;
-$background-grey-light: #E5E5E5;
+$background-gray: rgb(246, 247, 249);
+$background-gray-dark:rgb(19, 19, 20);
+$background-gray-light: rgb(229, 229, 229);

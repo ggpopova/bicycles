@@ -132,6 +132,8 @@ const build = (done) => gulp.series (
   copy,
   styles,
   scripts,
+  images,
+  webp,
   sprite
 )(done);
 
