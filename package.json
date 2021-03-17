@@ -8,6 +8,11 @@
     "build": "gulp build",
     "start": "gulp start"
   },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {

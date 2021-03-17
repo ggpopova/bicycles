@@ -13,9 +13,8 @@
   }
 }
 
-.advantages__heading {
-  margin: 0 auto;
-  margin-bottom: 50px;
+.advantages h2 {
+  margin: 0 auto 50px 14px;
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
@@ -24,7 +23,7 @@
   color: $gray-light;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 31px;
+    margin: 0 auto 31px;
     font-size: 24px;
     line-height: 41px;
   }
@@ -35,13 +34,16 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 38px;
   counter-reset: advantages-list;
-  margin: 0;
-  padding: 0 137px;
+  max-width: 1166px;
+  margin: 0 auto;
+  margin-left: 137px;
+  padding: 0;
   list-style: none;
 
   @media (max-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     gap: 42px;
+    margin: 0 auto;
     padding: 0 106px;
   }
 

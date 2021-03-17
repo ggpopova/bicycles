@@ -1,13 +1,14 @@
 .options {
   margin: 0 auto;
+  padding-bottom: 149px;
   background-color: $background-gray;
 
   @media (max-width: $tablet-width) {
-    padding-bottom: 74px;
+    padding-bottom: 71px;
   }
 
   @media (max-width: $mobile-width) {
-    padding-bottom: 58px;
+    padding-bottom: 52px;
   }
 }
 
@@ -36,14 +37,16 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  margin: 0;
-  gap: 50px;
-  padding: 0 150px 144px;
+  gap: 49px;
+  max-width: 1222px;
+  margin: 0 93px 0 auto;
+  padding: 0;
 
   @media (max-width: $tablet-width) {
     align-items: baseline;
     justify-content: center;
-    padding: 0 85px;
+    max-width: 598px;
+    margin: 0 auto;
   }
 
   @media (max-width: $mobile-width) {
@@ -58,10 +61,10 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: 21px;
+  gap: 17px;
 
   @media (max-width: $tablet-width) {
-    gap: 16px;
+    gap: 18px;
     margin-right: 0;
   }
 }
@@ -101,7 +104,7 @@
 
   @media (max-width: $tablet-width) {
     &::before {
-      top: 57.5%;
+      top: 57%;
       left: -14%;
       z-index: -1;
       width: 127px;
@@ -135,7 +138,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 5.5%;
+    bottom: 5%;
     right: -7%;
     width: 47px;
     height: 47px;
@@ -171,6 +174,8 @@
 
   @media (max-width: $tablet-width) {
     &::before {
+      top: -5%;
+      right: -9%;
       width: 68px;
       height: 68px;
       background-image: url("../img/icon-8.svg");
@@ -204,4 +209,8 @@
   text-align: center;
   letter-spacing: -0.5px;
   list-style: none;
+
+  &:active {
+    border-bottom: 2px solid $green;
+  }
 }

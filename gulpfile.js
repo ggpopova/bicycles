@@ -27,7 +27,10 @@ const styles = () => {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer({
+        overrideBrowserslist: ["last 5 versions"],
+        grid: "no-autoplace"
+      })
     ]))
     .pipe(csso())
     .pipe(rename({
@@ -132,8 +135,6 @@ const build = (done) => gulp.series (
   copy,
   styles,
   scripts,
-  images,
-  webp,
   sprite
 )(done);
 

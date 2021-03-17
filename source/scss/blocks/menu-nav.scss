@@ -1,6 +1,5 @@
 .menu-nav {
   position: relative;
-  max-height: 62px;
   margin-bottom: 261px;
   padding: 0 284px;
 
@@ -20,8 +19,13 @@
 
   @media (max-width: $tablet-width) {
     top: 0;
+    margin-top: 10px;
     margin-left: 22px;
-    padding: 25px 0 0;
+    padding: 14px 0 6px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 19px;
   }
 }
 
@@ -35,7 +39,7 @@
     right: 0;
     z-index: 2;
     width: 50px;
-    height: 50px;
+    min-height: 50px;
     margin-left: auto;
     background-color: $green;
     border: 0;
@@ -79,11 +83,11 @@
 
 .menu-nav__list:last-child {
   @media (max-width: $tablet-width) {
-    padding-bottom: 16px;
+    padding-bottom: 30%;
   }
 
   @media (max-width: $mobile-width) {
-    padding-bottom: 140px;
+    padding-bottom: 100%;
   }
 }
 
@@ -124,6 +128,15 @@
   color: $basic-white;
   opacity: 0.7;
 
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 1;
+  }
+
   @media (max-width: $tablet-width) {
     font-size: 20px;
     line-height: 28px;
@@ -158,8 +171,10 @@
 }
 
 .menu-nav--opened .menu-nav__list {
+  position: absolute;
   display: flex;
   flex-direction: column;
+  width: 100%;
   background-color: $basic-white;
 }
 

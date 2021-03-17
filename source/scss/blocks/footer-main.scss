@@ -3,6 +3,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
+  max-width: 957px;
 }
 
 .footer-main__address {
@@ -19,6 +20,7 @@
 
 .footer-main__address h2 {
   margin: 0 11px 29px 0;
+  padding-left: 20px;
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
@@ -27,7 +29,6 @@
   color: $gray-light;
 
   @media (max-width: $tablet-width) {
-    margin-right: 0;
     margin-bottom: 18px;
     font-size: 24px;
     line-height: 30px;
@@ -41,7 +42,7 @@
 
 .footer-main__address p {
   margin: 0;
-  padding: 0 440px 0 425px;
+  padding: 0 200px 0 200px;
   font-weight: normal;
   font-size: 17px;
   line-height: 31px;
@@ -75,13 +76,13 @@
 .footer-main__thumbnail {
   @media (max-width: $tablet-width) {
     width: 698px;
-    height: 545px;
+    min-height: 545px;
     object-fit: cover;
   }
 
   @media (max-width: $mobile-width) {
     width: 320px;
-    height: 250px;
+    min-height: 250px;
   }
 }
 
@@ -89,7 +90,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 558px;
   margin: 0 auto 97px;
 
@@ -105,48 +106,35 @@
   }
 }
 
+.footer-main__contacts span {
+  margin-left: 20px;
+
+  &:active {
+    border-bottom: 1px solid $green;
+  }
+}
+
 .footer-main__email,
 .footer-main__phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding: 8px 0;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: $gray-dark;
+
+  &:hover,
+  &:focus {
+    color: $green;
+  }
 }
 
 .footer-main__email {
-  position: relative;
-  margin-right: 90px;
-
-  &::before {
-    content: "";
-    width: 26px;
-    height: 20px;
-    padding-left: 40px;
-    background-image: url("../img/icon-5.svg");
-    background-repeat: no-repeat;
-  }
+  margin-right: 86px;
 
   @media (max-width: $mobile-width) {
     margin-right: 0;
-  }
-}
-
-.footer-main__phone {
-  position: relative;
-
-  &::before {
-    content: "";
-    width: 22px;
-    height: 23px;
-    padding-left: 53px;
-    background-image: url("../img/icon-6.svg");
-    background-repeat: no-repeat;
-  }
-
-  @media (max-width: $mobile-width) {
-    &::before {
-      padding-left: 40px;
-    }
   }
 }
