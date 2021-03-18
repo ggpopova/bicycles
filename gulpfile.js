@@ -110,7 +110,6 @@ const copy = () => {
     .src(
       [
         `source/fonts/**/*.{woff,woff2}`,
-        `source/img/**`,
         `source/*.ico`,
         `source/*.html`
       ],

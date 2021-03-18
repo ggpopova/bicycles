@@ -39,14 +39,13 @@
   align-items: flex-start;
   gap: 49px;
   max-width: 1222px;
-  margin: 0 93px 0 auto;
+  margin: 0 auto;
   padding: 0;
 
   @media (max-width: $tablet-width) {
     align-items: baseline;
     justify-content: center;
     max-width: 598px;
-    margin: 0 auto;
   }
 
   @media (max-width: $mobile-width) {
