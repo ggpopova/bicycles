@@ -123,7 +123,7 @@ const copy = () => {
 // Удаляем файлы из папки build
 
 const clean = () => {
-  return del(`build`);
+  return del([`build/*/`, `!build/img`]);
 };
 
 // Собираем проект: удаляем папку build, копируем файлы, обрабатываем стили,
@@ -162,7 +162,7 @@ const images = () => {
         }),
       ])
     )
-    .pipe(gulp.dest(`source/img`));
+    .pipe(gulp.dest(`build/img`));
 };
 
 exports.images = images;
@@ -174,7 +174,7 @@ const webp = () => {
   return gulp
     .src(`source/img/**/*.{jpg,png}`)
     .pipe(gulpWebp({ quality: 90 }))
-    .pipe(gulp.dest(`source/img`));
+    .pipe(gulp.dest(`build/img`));
 };
 
 exports.webp = webp;
