@@ -3,12 +3,12 @@
   margin-bottom: 261px;
   padding: 0 284px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     margin: 0 0 37px 0;
     padding: 0;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin-bottom: 24px;
   }
 }
@@ -17,14 +17,14 @@
   position: absolute;
   top: 318px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     top: 0;
     margin-top: 10px;
     margin-left: 22px;
     padding: 14px 0 6px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin-left: 19px;
   }
 }
@@ -32,7 +32,7 @@
 .menu-nav__toggle {
   display: none;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     display: flex;
     position: relative;
     top: 0;
@@ -70,35 +70,30 @@
   list-style: none;
   border-bottom: 1px solid $gray-lighter;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     display: none;
   }
 }
 
-.menu-nav__item:first-of-type {
-  @media (max-width: $tablet-width) {
-    margin-top: 50px;
-  }
-}
+// .menu-nav__item:first-of-type {
+//   @media (max-width: $desktop-width) {
+//     margin-top: 50px;
+//   }
+// }
 
-.menu-nav__list:last-child {
-  @media (max-width: $tablet-width) {
-    padding-bottom: 30%;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding-bottom: 100%;
-  }
-}
+// .menu-nav__list:last-child {
+//   @media (max-width: $desktop-width) {
+//     padding-bottom: 138px;
+//   }
+// }
 
 .menu-nav__item {
   margin-top: 10px;
   padding: 10px 20px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     position: relative;
     width: 100%;
-    margin-top: 40px;
     margin-left: 0;
     padding: 17px 16px;
     background: $menu-background-gray;
@@ -115,9 +110,9 @@
     }
   }
 
-  @media (max-width: $mobile-width) {
-    margin-top: 28px;
-  }
+  // @media (max-width: $mobile-width) {
+  //   margin-top: 28px;
+  // }
 }
 
 .menu-nav__item a {
@@ -137,7 +132,7 @@
     opacity: 1;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     font-size: 20px;
     line-height: 28px;
     color: $menu-gray;
@@ -145,7 +140,7 @@
 }
 
 .menu-nav--opened .menu-nav__toggle {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     background-color: $basic-white;
 
     &::before,
@@ -174,9 +169,12 @@
   position: absolute;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  gap: 18px;
   width: 100%;
-  // min-height: 100vh;
+  min-height: 100vh;
   background-color: $basic-white;
+  padding: 38px 0;
 }
 
 .menu-nav--opened {

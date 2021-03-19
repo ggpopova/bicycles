@@ -9,18 +9,17 @@
 .footer-main__address {
   margin-bottom: 41px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     margin-bottom: 24px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin-bottom: 18px;
   }
 }
 
 .footer-main__address h2 {
   margin: 0 11px 29px 0;
-  padding-left: 20px;
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
@@ -28,13 +27,14 @@
   text-align: center;
   color: $gray-light;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     margin-bottom: 18px;
     font-size: 24px;
     line-height: 30px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
+    padding-left: 10px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -42,18 +42,18 @@
 
 .footer-main__address p {
   margin: 0;
-  padding: 0 200px 0 200px;
+  padding: 0 200px 0 183px;
   font-weight: normal;
   font-size: 17px;
   line-height: 31px;
   text-align: center;
   color: $gray-darkest;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     padding: 0 69px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     width: 288px;
     margin: 0 auto;
     padding: 0 15px 0 17px;
@@ -64,23 +64,23 @@
   margin: 0 auto;
   margin-bottom: 29px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     margin-bottom: 8px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin-bottom: 19px;
   }
 }
 
 .footer-main__thumbnail {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     max-width: 698px;
     min-height: 545px;
     object-fit: cover;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     max-width: 320px;
     min-height: 250px;
   }
@@ -91,14 +91,14 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  width: 558px;
+  min-width: 558px;
   margin: 0 auto 97px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     margin-bottom: 44px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     flex-direction: column;
     gap: 7px;
     margin-bottom: 31px;
@@ -134,7 +134,7 @@
 .footer-main__email {
   margin-right: 86px;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin-right: 0;
   }
 }

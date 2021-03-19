@@ -3,11 +3,11 @@
   padding-bottom: 149px;
   background-color: $background-gray;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     padding-bottom: 71px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     padding-bottom: 52px;
   }
 }
@@ -23,7 +23,7 @@
   color: $gray-light;
   text-align: center;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     margin-bottom: 29px;
     padding-top: 50px;
     font-size: 24px;
@@ -42,13 +42,13 @@
   margin: 0 auto;
   padding: 0;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     align-items: baseline;
     justify-content: center;
     max-width: 598px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     flex-direction: column;
     gap: 43px;
     padding: 0 25px;
@@ -62,16 +62,17 @@
   align-items: center;
   gap: 17px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     gap: 18px;
     margin-right: 0;
+    margin: 0 auto;
   }
 }
 
 .options__item:nth-child(2n) {
   margin-top: 30px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     margin-top: 0;
   }
 }
@@ -80,7 +81,8 @@
   margin: 0;
   margin-top: -8px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
+    margin: 0 auto;
     margin-top: -1px;
   }
 }
@@ -101,7 +103,7 @@
     background-repeat: no-repeat;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     &::before {
       top: 57%;
       left: -14%;
@@ -113,7 +115,7 @@
     }
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     &::before {
       left: -9%;
     }
@@ -145,7 +147,7 @@
     background-repeat: no-repeat;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     &::before {
       display: none;
     }
@@ -171,7 +173,9 @@
     z-index: 1;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
+    margin: 0 auto;
+
     &::before {
       top: -5%;
       right: -9%;
@@ -182,7 +186,8 @@
     }
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
+
     &::before {
       right: -5.5%;
     }
@@ -194,7 +199,7 @@
   object-fit: cover;
   border-radius: 10px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     width: 270px;
     height: 300px;
   }
