@@ -52,7 +52,7 @@
 .page-header__title {
   display: flex;
   flex-direction: column;
-  width: 381px;
+  min-width: 381px;
 
   @media (max-width: $tablet-width) {
     width: auto;
