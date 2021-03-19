@@ -54,8 +54,12 @@
   flex-direction: column;
   min-width: 381px;
 
-  @media (max-width: $tablet-width) {
-    width: auto;
+  // @media (max-width: $tablet-width) {
+
+  // }
+
+  @media (max-width: $mobile-width) {
+    min-width: 288px;
   }
 }
 
@@ -109,7 +113,7 @@
   }
 }
 
-.page-header p {
+.page-header form p {
   margin: 0;
   font-weight: 600;
   font-size: 17px;
@@ -133,8 +137,8 @@
   }
 }
 
-.page-header button,
-.page-header input {
+.page-header form button,
+.page-header form input {
   width: 327px;
   min-height: 49px;
   padding: 5px 30px;
@@ -162,7 +166,7 @@
   }
 }
 
-.page-header button {
+.page-header form button {
   font-weight: 600;
   font-size: 15px;
   line-height: 21px;
