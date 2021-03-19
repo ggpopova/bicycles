@@ -92,13 +92,14 @@
 .information-video__thumbnail {
   max-width: 929px;
   min-height: 522px;
-  margin: auto 256px;
+  margin: 0 auto;
+  // margin: auto 256px;
   background-color: $gray-darkest;
 
   @media (max-width: $tablet-width) {
     max-width: 503px;
     min-height: 282px;
-    margin: 0 auto;
+
   }
 
   @media (max-width: $mobile-width) {
@@ -109,7 +110,7 @@
 
 .information-video__button-play {
   position: absolute;
-  transform: scale(1) translate(12%, -3%);
+  transform: scale(1) translate(-1%,-3%);
   width: 65px;
   height: 65px;
   padding: 0;
