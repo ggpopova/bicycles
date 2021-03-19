@@ -54,10 +54,6 @@
   flex-direction: column;
   min-width: 381px;
 
-  // @media (max-width: $tablet-width) {
-
-  // }
-
   @media (max-width: $mobile-width) {
     min-width: 288px;
   }
@@ -159,10 +155,6 @@
 .page-header input {
   &:valid {
     border-color: $green;
-  }
-
-  &:invalid {
-    border-color: $error;
   }
 }
 
