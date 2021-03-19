@@ -91,7 +91,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  min-width: 558px;
+  max-width: 558px;
   margin: 0 auto 97px;
 
   @media (max-width: $desktop-width) {
