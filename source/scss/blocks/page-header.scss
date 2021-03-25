@@ -1,36 +1,5 @@
 .page-header {
   position: relative;
-  width: 100%;
-  margin: 0 auto;
-  height: 825px;
-  z-index: -1;
-  background-repeat: no-repeat;
-  background-image: url("../img/photo-1-desktop@1x.jpg");
-  background-color: $gray-darker;
-  background-size: cover;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/photo-1-desktop@2x.jpg");
-  }
-
-
-  @media (max-width: $desktop-width) {
-    max-height: 340px;
-    background-image: url("../img/photo-1-tablet@1x.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/photo-1-tablet@2x.jpg");
-    }
-  }
-
-  @media (max-width: $tablet-width) {
-    max-height: 390px;
-    background-image: url("../img/photo-1-mobile@1x.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/photo-1-mobile@2x.jpg");
-    }
-  }
 }
 
 .page-header__wrapper {
@@ -41,16 +10,52 @@
   margin: 0 auto 0 279px;
   padding-bottom: 239px;
 
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    height: 825px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-image: url("../img/photo-1-desktop@1x.jpg");
+    background-color: $gray-darker;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo-1-desktop@2x.jpg");
+    }
+  }
+
   @media (max-width: $desktop-width) {
     flex-direction: column;
-    // gap: 150px;
     max-width: 440px;
     margin: 0 auto;
+    padding: 0;
+
+    &::before {
+      max-height: 340px;
+      background-image: url("../img/photo-1-tablet@1x.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/photo-1-tablet@2x.jpg");
+      }
+    }
   }
 
   @media (max-width: $tablet-width) {
-    // gap: 140px;
     padding: 0 16px 0 15px;
+
+    &::before {
+      max-height: 390px;
+      background-image: url("../img/photo-1-mobile@1x.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/photo-1-mobile@2x.jpg");
+      }
+    }
   }
 }
 
