@@ -1,8 +1,10 @@
 'use strict'
 
-// MENU
-var menuNav = document.querySelector(`.menu-nav`);
-var menuNavToggle = document.querySelector(`.menu-nav__toggle`);
+// const noJsElement = document.querySelector(`.no-js`);
+// noJsElement.classList.remove(`no-js`);
+
+const menuNav = document.querySelector(`.menu-nav`);
+const menuNavToggle = document.querySelector(`.menu-nav__toggle`);
 
 if (menuNav && menuNavToggle) {
   menuNav.classList.remove(`menu-nav-nojs`);

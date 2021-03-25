@@ -1,5 +1,9 @@
 .page-header {
+  position: relative;
+  width: 100%;
   margin: 0 auto;
+  height: 825px;
+  z-index: -1;
   background-repeat: no-repeat;
   background-image: url("../img/photo-1-desktop@1x.jpg");
   background-color: $gray-darker;
@@ -8,6 +12,7 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/photo-1-desktop@2x.jpg");
   }
+
 
   @media (max-width: $desktop-width) {
     max-height: 340px;
@@ -38,28 +43,29 @@
 
   @media (max-width: $desktop-width) {
     flex-direction: column;
-    gap: 150px;
+    // gap: 150px;
     max-width: 440px;
     margin: 0 auto;
   }
 
   @media (max-width: $tablet-width) {
-    gap: 140px;
+    // gap: 140px;
     padding: 0 16px 0 15px;
   }
 }
 
 .page-header__title {
-  display: flex;
-  flex-direction: column;
-  max-width: 381px;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 420px;
 
   @media (max-width: $desktop-width) {
-    margin: 0 auto;
+    margin: 0 auto 150px;
   }
 
   @media (max-width: $tablet-width) {
     max-width: 288px;
+    margin-bottom: 140px;
   }
 }
 
@@ -98,9 +104,9 @@
 }
 
 .page-header form {
-  display: flex;
+  display: grid;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: end;
   gap: 20px;
   width: 327px;
 
