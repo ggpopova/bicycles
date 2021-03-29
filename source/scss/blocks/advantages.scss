@@ -34,9 +34,8 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 38px;
   counter-reset: advantages-list;
-  max-width: 1166px;
-  margin: 0 auto;
-  margin-left: 137px;
+  min-width: 1166px;
+  margin: 0 auto 0 -66px;
   padding: 0;
   list-style: none;
 
@@ -50,6 +49,7 @@
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr;
     gap: 34px;
+    min-width: 320px;
     padding: 0 29px 28px;
   }
 }
