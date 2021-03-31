@@ -63,10 +63,24 @@
   margin-right: 49px;
   margin-bottom: 49px;
 
+  @media (max-width: $desktop-max) {
+    max-width: 295px;
+    height: auto;
+    margin-right: 39px;
+  }
+
+  @media (max-width: $desktop-width-max) {
+    margin-right: 29px;
+  }
+
+
   @media (max-width: $desktop-width) {
     gap: 18px;
     margin-right: 43px;
   }
+  // {
+
+  // }
 
   @media (max-width: $tablet-width) {
     margin: 0 auto 43px;
@@ -78,6 +92,7 @@
 
   @media (max-width: $desktop-width) {
     margin-top: 0;
+    margin-right: 0;
   }
 }
 
