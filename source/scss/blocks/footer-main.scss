@@ -8,10 +8,10 @@
 }
 
 .footer-main__address {
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 
   @media (max-width: $desktop-width) {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 
   @media (max-width: $tablet-width) {
@@ -62,7 +62,7 @@
 
 .footer-main__map {
   margin: 0 auto;
-  margin-bottom: 29px;
+  margin-bottom: 26px;
 
   @media (max-width: $desktop-width) {
     margin-bottom: 8px;

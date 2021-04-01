@@ -46,8 +46,6 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 0 16px 0 15px;
-
     &::before {
       max-height: 390px;
       background-image: url("../img/photo-1-mobile@1x.jpg");
@@ -89,6 +87,10 @@
     line-height: 42px;
     text-align: center;
   }
+
+  // @media (max-width: $tablet-width) {
+  //   padding-left: 17px;
+  // }
 }
 
 .page-header__title p {
@@ -106,6 +108,10 @@
     line-height: 32px;
     text-align: center;
   }
+
+  // @media (max-width: $tablet-width) {
+  //   padding-left: 17px;
+  // }
 }
 
 .page-header form {
@@ -143,7 +149,7 @@
 
   @media (max-width: $tablet-width) {
     margin-bottom: 0;
-    padding-left: 10px;
+    padding-left: 3px;
     padding-right: 10px;
   }
 }
